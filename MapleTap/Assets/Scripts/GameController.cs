@@ -166,8 +166,8 @@ public class GameController : MonoBehaviour
         while (time < 365 * dayLength)
         {
             time++;
-            //yield return null;
-            yield return new WaitForSeconds(1f);
+            yield return null;
+            //yield return new WaitForSeconds(1f);
         }
 
         Application.LoadLevel("Stats");
