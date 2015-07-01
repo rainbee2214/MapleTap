@@ -21,16 +21,18 @@ public class MapleTree : MonoBehaviour
     void Start()
     {
         id = int.Parse(this.name.Substring(5));
-        maxPotency = Random.Range(60, 100)/100f;
-        minPotency = Random.Range(50, maxPotency * 100) / 100f;
-        //Debug.Log(maxPotency + " " + minPotency);
     }
 
+    public void SetupTree()
+    {
+        maxPotency = Random.Range(60, 100)/100f;
+        minPotency = Random.Range(50, maxPotency * 100) / 100f;
+        baseOutput = Random.Range(1, 3);
+    }
     public void Tap()
     {
         int output = baseOutput * level;
         GameController.controller.Tap(output);
-        Debug.Log("Tapping tree " + id + " for " + output + " raw sap!");
     }
 
     void OnMouseDown()
@@ -38,9 +40,9 @@ public class MapleTree : MonoBehaviour
         Tap();
     }
 
-    void Upgrade()
+    public void Upgrade()
     {
-        baseOutput *= 2;
-
+        baseOutput += baseOutput/2;
+        Debug.Log("Upgrading " + this.name);
     }
 }

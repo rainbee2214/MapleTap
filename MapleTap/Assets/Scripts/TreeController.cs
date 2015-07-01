@@ -18,6 +18,7 @@ public class TreeController : MonoBehaviour
         foreach (GameObject tree in treesGameObjects)
         {
             trees.Add(tree.GetComponent<MapleTree>());
+            trees[trees.Count - 1].SetupTree();
         }
     }
 
@@ -26,7 +27,13 @@ public class TreeController : MonoBehaviour
 
     }
 
-    public void Upgrade() { }
+    public void Upgrade() 
+    {
+        foreach(MapleTree tree in trees)
+        {
+            tree.Upgrade();
+        }
+    }
 
     public void TapTree(int index)
     {
