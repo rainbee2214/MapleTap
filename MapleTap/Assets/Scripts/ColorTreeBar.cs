@@ -9,8 +9,8 @@ using UnityEngine.UI;
 /// </summary>
 public class ColorTreeBar : MonoBehaviour
 {
-    public Color empty = Color.red;
-    public Color full = Color.green;
+    public Color empty = Color.red,
+                 full = Color.green;
 
     Slider parentSlider;
     Image scrollBar;
