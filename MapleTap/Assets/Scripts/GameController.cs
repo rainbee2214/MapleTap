@@ -22,6 +22,11 @@ public class GameController : MonoBehaviour
         get { return time; }
         set { time += value; }
     }
+    float dayLength = 5f;
+    public float DayLength
+    {
+        get { return dayLength; }
+    }
     public int Day
     {
         get { return time / secondsPerDay; }

@@ -854,6 +854,70 @@ Prefab:
       propertyPath: m_Name
       value: TheTrees
       objectReference: {fileID: 0}
+    - target: {fileID: 11497586, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: scrollbar
+      value: 
+      objectReference: {fileID: 594298550}
+    - target: {fileID: 11446954, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: scrollbar
+      value: 
+      objectReference: {fileID: 1923813669}
+    - target: {fileID: 11432236, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: scrollbar
+      value: 
+      objectReference: {fileID: 235649284}
+    - target: {fileID: 11457524, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: scrollbar
+      value: 
+      objectReference: {fileID: 1192108265}
+    - target: {fileID: 11497586, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 594298550}
+    - target: {fileID: 11446954, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1923813669}
+    - target: {fileID: 11432236, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 235649284}
+    - target: {fileID: 11457524, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1192108265}
+    - target: {fileID: 11451230, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 2034555837}
+    - target: {fileID: 11431898, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 885482676}
+    - target: {fileID: 11489842, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1599827652}
+    - target: {fileID: 11408326, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 131678380}
+    - target: {fileID: 11436332, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1239558809}
+    - target: {fileID: 11401050, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 162600574}
+    - target: {fileID: 11474282, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1787081925}
+    - target: {fileID: 11464748, guid: dcc979bde366028478d092eda56a198f, type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 18495897}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dcc979bde366028478d092eda56a198f, type: 2}
   m_IsPrefabParent: 0
