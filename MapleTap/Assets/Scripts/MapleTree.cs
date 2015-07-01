@@ -20,19 +20,26 @@ public class MapleTree : MonoBehaviour
 
     bool ableToTap = true;
     float increment = 0.1f;
-    bool grow = true;
+    public bool grow = true;
+    public bool clicked = false;
+
 
     void Start()
     {
         id = int.Parse(this.name.Substring(5));
         growthRate += Time.time;
-        StartCoroutine(Grow());
 
     }
 
     void Update()
     {
-        if (grow) StartCoroutine(Grow());
+        if (grow) StartCoroutine("Grow");
+        if (clicked)
+        {
+            clicked = false;
+            StopCoroutine("Grow");
+            StartCoroutine("Clicked");
+        }
     }
 
     public void SetupTree()
@@ -94,6 +101,19 @@ public class MapleTree : MonoBehaviour
             yield return null;
         }
         //print("Dying");
+        ableToTap = true;
+        grow = true;
+    }
+    IEnumerator Clicked()
+    {
+        ableToTap = false;
+        int i = 0;
+        while (slider.value > 0)
+        {
+            i++;
+            slider.value = 1-i / growthRate*2;
+            yield return null;
+        }
         ableToTap = true;
         grow = true;
     }
