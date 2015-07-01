@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
@@ -11,11 +12,9 @@ public class GameController : MonoBehaviour
     public TreeController treeController;
 
     #region Properties
-    int rawSap;
     public int RawSap
     {
-        get { return rawSap; }
-        set { rawSap += value; }
+        get { return rawSap.Count; }
     }
     int refinedSyrup;
     public int RefinedSyrup
@@ -61,6 +60,9 @@ public class GameController : MonoBehaviour
     }
     #endregion
 
+    public List<GameObject> rawSap;
+    GameObject rawSapGameObject;
+
     int secondsPerDay = 5;
 
     void Awake()
@@ -76,6 +78,9 @@ public class GameController : MonoBehaviour
         }
         refineryController = GetComponentInChildren<RefineryController>();
         treeController = GetComponentInChildren<TreeController>();
+
+        rawSap = new List<GameObject>();
+        rawSapGameObject = Resources.Load("Prefabs/RawSap", typeof(GameObject)) as GameObject;
     }
 
     public int GetDay()
@@ -91,4 +96,14 @@ public class GameController : MonoBehaviour
         if (debt < 0) debt = 0;
     }
 
+    public void Tap(int numberOfSap)
+    {
+        for (int i = 0; i < numberOfSap; i++)
+        {
+            rawSap.Add(Instantiate(rawSapGameObject) as GameObject);
+            rawSap[rawSap.Count - 1].name = "RawSap" + (rawSap.Count - 1);
+            rawSap[rawSap.Count - 1].transform.SetParent(transform);
+        }
+        Debug.Log(rawSap.Count + " sap total.");
+    }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Refinery : Asset
+public class Refinery : MonoBehaviour
 {
 
     void Start()

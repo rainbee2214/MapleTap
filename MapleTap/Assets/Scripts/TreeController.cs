@@ -4,20 +4,21 @@ using System.Collections.Generic;
 
 public class TreeController : MonoBehaviour
 {
-    List<Asset> assets;
-    List<GameObject> assetsGameObjects;
+    public List<GameObject> treesGameObjects;
+    List<MapleTree> trees;
     float costToUpgrade;
 
-    GameObject assetGameObject;
-    Asset asset;
+    GameObject treeGameObject;
 
-    int assetCount = 6;
+    int assetCount = 12;
 
     void Start()
     {
-        asset = assetGameObject.GetComponent<Asset>();
-        LoadAssets();
-        Debug.Log(asset.name);
+        trees = new List<MapleTree>();
+        foreach (GameObject tree in treesGameObjects)
+        {
+            trees.Add(tree.GetComponent<MapleTree>());
+        }
     }
 
     void Update()
@@ -27,26 +28,9 @@ public class TreeController : MonoBehaviour
 
     public void Upgrade() { }
 
-    void LoadAssets()
+    public void TapTree(int index)
     {
-        assetGameObject
-        assets = new List<MapleTree>();
-        assetsGameObjects = new List<GameObject>();
-        for (int i = 0; i < assetCount; i++)
-        {
-            assets.Add(asset);
-            assetsGameObjects.Add(Instantiate(assetGameObject) as GameObject);
-            assetsGameObjects[i].name = assetGameObject.name + i;
-            assetsGameObjects[i].transform.SetParent(transform);
-        }
-
-        foreach (Asset a in assets)
-        {
-            a.PrintName();
-        }
-        foreach (GameObject a in assetsGameObjects)
-        {
-            Debug.Log("Gameobject:" + a.name);
-        }
+        trees[index].Tap();
     }
+
 }
