@@ -14,6 +14,7 @@ public class GroundColorChange : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
+        renderer.material.color = spring;
     }
 
     void Update()

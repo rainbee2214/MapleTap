@@ -43,7 +43,7 @@ GameObject:
   - 114: {fileID: 11494502}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  costToUpgrade: 100
 --- !u!114 &11480918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,6 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ffef6110773343b871d9205f3e87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitSize: 10
+  costToUpgrade: 500
 --- !u!114 &11494502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,14 +137,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   refineryController: {fileID: 0}
   treeController: {fileID: 0}
-  rawSap: []
+  startTime: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193326}

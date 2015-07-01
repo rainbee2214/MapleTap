@@ -37,7 +37,8 @@ public class Sun : MonoBehaviour
             }
             rotation.Set(defaultXRotation, y, defaultZRotation);
             transform.eulerAngles = rotation;
-            yield return new WaitForSeconds(GameController.controller.DayLength);
+            yield return null;
+            //yield return new WaitForSeconds(GameController.controller.DayLength);
         }
 
 
