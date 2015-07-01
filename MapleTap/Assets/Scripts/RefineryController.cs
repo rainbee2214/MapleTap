@@ -36,11 +36,13 @@ public class RefineryController : MonoBehaviour
     {
         Debug.Log("Sell price: " + p/unitSize);
         GameController.controller.Money = p;
-
+        GameController.controller.TotalSales = unitSize;
+        GameController.controller.TotalSalesPrices = p;
     }
 
     public void Upgrade()
     {
+        GameController.controller.UpgradesBought = costToUpgrade;
         Debug.Log("Refining upgrade");
         unitSize += 10;
         refinementMultiplier *= 2;

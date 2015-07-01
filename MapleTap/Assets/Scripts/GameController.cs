@@ -12,11 +12,29 @@ public class GameController : MonoBehaviour
     public TreeController treeController;
 
     #region Properties
+    int totalSales;
+    public int TotalSales
+    {
+        get { return totalSales; }
+        set { totalSales += value; }
+    }
+    float totalSalesPrices;
+    public float TotalSalesPrices
+    {
+        get { return totalSalesPrices; }
+        set { totalSalesPrices += value; }
+    }
     float rawSap;
     public float RawSap
     {
         get { return rawSap; }
         set { rawSap += value; }
+    }
+    float totalSap;
+    public float TotalSap
+    {
+        get { return totalSap; }
+        set { totalSap += value; }
     }
     int time;
     public int Time
@@ -64,12 +82,14 @@ public class GameController : MonoBehaviour
         get { return money; }
         set
         {
-            if (money <= 0)
+            if (value >= 0) moneyEarned += value;
+            if (money <= 0 && value <= 0)
             {
                 debt -= value;
             }
             else
             {
+                
                 money += value;
                 if (money < 0)
                 {
@@ -105,10 +125,36 @@ public class GameController : MonoBehaviour
     }
     public float AverageSap
     {
-        get
-        {
-            return treeController.GetAverageOutput();
-        }
+        get { return treeController.GetAverageOutput(); }
+    }
+    float sapSold;
+    public float SapSold
+    {
+        get { return sapSold; }
+    }
+    float moneyEarned;
+    public float MoneyEarned
+    {
+        get { return moneyEarned; }
+    }
+    float upgradesBought;
+    public float UpgradesBought
+    {
+        get { return upgradesBought; }
+        set { upgradesBought += value; }
+    }
+    int dayFinished;
+    public int DayFinished
+    {
+        get { return dayFinished; }
+    }
+    public float NetEarnings
+    {
+        get { return Money-Debt;}
+    }
+    public float AverageSapPrice
+    {
+        get { return TotalSalesPrices/TotalSales; }
     }
     #endregion
 
@@ -157,6 +203,7 @@ public class GameController : MonoBehaviour
     {
         //rawSap += Random.Range(minAmount, maxAmount) * Random.Range(minPotency, maxPotency);
         rawSap += amount;
+        totalSap += amount;
         Debug.Log(amount);
     }
 
@@ -170,6 +217,7 @@ public class GameController : MonoBehaviour
             //yield return new WaitForSeconds(1f);
         }
 
+        dayFinished = 365;
         Application.LoadLevel("Stats");
     }
 }

@@ -28,6 +28,7 @@ public class TreeController : MonoBehaviour
 
     public void Upgrade() 
     {
+        GameController.controller.UpgradesBought = costToUpgrade;
         GameController.controller.Money = -costToUpgrade;
         costToUpgrade += (costToUpgrade*costInflation);
         costInflation += 0.1f;
