@@ -14,7 +14,7 @@ public class GroundColorChange : MonoBehaviour
     void Start()
     {
         material = gameObject.GetComponent<Material>();
-        InvokeRepeating("CalculateColor", 0.0f, GameController.controller.DayLength)
+        InvokeRepeating("CalculateColor", 0.0f, GameController.controller.DayLength);
     }
 
     void CalculateColor()
