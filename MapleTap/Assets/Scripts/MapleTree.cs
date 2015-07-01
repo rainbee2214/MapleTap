@@ -27,12 +27,12 @@ public class MapleTree : MonoBehaviour
     {
         maxPotency = Random.Range(60, 100)/100f;
         minPotency = Random.Range(50, maxPotency * 100) / 100f;
-        baseOutput = Random.Range(1, 3);
+        baseOutput = 1;
     }
     public void Tap()
     {
         int output = GetOutput();
-        GameController.controller.Tap(output);
+        GameController.controller.Tap(output, maxPotency, minPotency);
     }
 
     public int GetOutput()
@@ -47,7 +47,7 @@ public class MapleTree : MonoBehaviour
 
     public void Upgrade()
     {
-        baseOutput += baseOutput/2;
+        baseOutput *= 2;
         Debug.Log("Upgrading " + this.name);
     }
 }

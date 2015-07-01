@@ -4156,7 +4156,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1415410773}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11463804, guid: 0900b882527975445b64eee4948b8848, type: 2}
+        m_MethodName: RefineAndSell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1415410773
@@ -4831,6 +4842,7 @@ MonoBehaviour:
   sapAmountText: {fileID: 616312920}
   avgSapAmountText: {fileID: 913031706}
   upgradeTapPriceText: {fileID: 1412992160}
+  upgradeRefineryPriceText: {fileID: 1785763877}
 --- !u!4 &1612594724
 Transform:
   m_ObjectHideFlags: 0
@@ -6209,7 +6221,7 @@ GameObject:
   - 114: {fileID: 2067822571}
   - 114: {fileID: 2067822570}
   m_Layer: 5
-  m_Name: UpgradeFacilities
+  m_Name: UpgradeRefinery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6271,7 +6283,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067822571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11463804, guid: 0900b882527975445b64eee4948b8848, type: 2}
+        m_MethodName: UpgradeRefinery
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2067822571

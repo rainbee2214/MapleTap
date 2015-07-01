@@ -49,6 +49,11 @@ public class GameController : MonoBehaviour
             else
             {
                 money += value; 
+                if (money < 0)
+                {
+                    debt -= money;
+                    money = 0;
+                }
                 maxMoney = money > maxMoney ? money : maxMoney;
             }
         }
@@ -116,13 +121,14 @@ public class GameController : MonoBehaviour
         if (debt < 0) debt = 0;
     }
 
-    public void Tap(int numberOfSap)
+    public void Tap(int numberOfSap, float maxPotency, float minPotency)
     {
         for (int i = 0; i < numberOfSap; i++)
         {
             rawSap.Add(Instantiate(rawSapGameObject) as GameObject);
             rawSap[rawSap.Count - 1].name = "RawSap" + (rawSap.Count - 1);
             rawSap[rawSap.Count - 1].transform.SetParent(transform);
+            rawSap[rawSap.Count - 1].GetComponent<RawSap>().potency = Random.Range(minPotency, maxPotency);
         }
     }
 }
