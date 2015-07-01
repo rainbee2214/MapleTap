@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour
     }
     public int Day
     {
-        get { return time / secondsPerDay; }
+        get { return 1+time / secondsPerDay; }
     }
     public int Season
     {
@@ -41,6 +41,21 @@ public class GameController : MonoBehaviour
             else if (Day >= 183) return 2;
             else if (Day >= 91) return 1;
             else return 0;
+        }
+    }
+    public string SeasonName
+    {
+        get
+        {
+            switch (Season)
+            {
+                case 0: return "Spring";
+                case 1: return "Summer";
+                case 2: return "Autumn";
+                case 3: return "Winter";
+                default: return "Spring";
+            }
+
         }
     }
     float money = 1000f;
@@ -121,6 +136,10 @@ public class GameController : MonoBehaviour
         rawSapGameObject = Resources.Load("Prefabs/RawSap", typeof(GameObject)) as GameObject;
     }
 
+    void Start()
+    {
+        startTime = true;
+    }
     void Update()
     {
         if (startTime) StartCoroutine("StartTime");
@@ -143,10 +162,14 @@ public class GameController : MonoBehaviour
 
     IEnumerator StartTime()
     {
+        startTime = false;
         while (time < 365 * dayLength)
         {
             time++;
+            //yield return null;
             yield return new WaitForSeconds(1f);
         }
+
+        Application.LoadLevel("Stats");
     }
 }

@@ -1338,6 +1338,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 430090626}
   - 108: {fileID: 430090625}
+  - 114: {fileID: 430090627}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1383,12 +1384,27 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 430090624}
-  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
+  m_LocalRotation: {x: -.301561981, y: .634957314, z: -.296085477, w: -.646701634}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &430090627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 430090624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3413e745bf9bc764191a1d1e839197ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultXRotation: 50
+  defaultZRotation: 0
+  minYRotation: 70
+  maxYRotation: 270
 --- !u!1 &432325123
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +3577,8 @@ MonoBehaviour:
   upgradeTapPriceText: {fileID: 1412992160}
   upgradeRefineryPriceText: {fileID: 1785763877}
   sellunitText: {fileID: 654635314}
+  nameText: {fileID: 1956833894}
+  dateText: {fileID: 236281870}
 --- !u!4 &1612594724
 Transform:
   m_ObjectHideFlags: 0
@@ -3573,6 +3591,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &1702182517 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167874, guid: 8cecf4fa8c9422540b0f77ab521b4fde, type: 2}
+  m_PrefabInternal: {fileID: 587878920}
+--- !u!114 &1702182522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1702182517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977e7ea12173a1a4fa24178f7781e61c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spring: {r: .935395718, g: .639705896, b: 1, a: 1}
+  summer: {r: 0, g: 1, b: 0, a: 1}
+  fall: {r: .963235319, g: .938403845, b: .651600361, a: 1}
+  winter: {r: .852941155, g: .852941155, b: .852941155, a: 1}
 --- !u!1 &1759846297
 GameObject:
   m_ObjectHideFlags: 0

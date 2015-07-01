@@ -8,32 +8,35 @@ public class GroundColorChange : MonoBehaviour
                  fall = Color.yellow,
                  winter = Color.grey;
 
-    Material material;
 
+    Renderer renderer;
     // Use this for initialization
     void Start()
     {
-        material = gameObject.GetComponent<Material>();
-        InvokeRepeating("CalculateColor", 0.0f, GameController.controller.DayLength);
+        renderer = GetComponent<Renderer>();
     }
 
+    void Update()
+    {
+        CalculateColor();
+    }
     void CalculateColor()
     {
         int season = GameController.controller.Season;
-        float scale = GameController.controller.Day / 92;
+        float scale = (GameController.controller.Day - (season * 91)) / 91f;
         switch (season)
         {
             case 0:
-                material.color = Color.Lerp(spring, summer, scale);
+                renderer.material.color = Color.Lerp(spring, summer, scale);
                 break;
             case 1:
-                material.color = Color.Lerp(summer, fall, scale);
+                renderer.material.color = Color.Lerp(summer, fall, scale);
                 break;
             case 2:
-                material.color = Color.Lerp(fall, winter, scale);
+                renderer.material.color = Color.Lerp(fall, winter, scale);
                 break;
             case 3:
-                material.color = winter;
+                renderer.material.color = winter;
                 break;
         }
         

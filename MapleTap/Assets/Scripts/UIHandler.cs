@@ -12,9 +12,13 @@ public class UIHandler : MonoBehaviour
     public Text upgradeTapPriceText;
     public Text upgradeRefineryPriceText;
     public Text sellunitText;
+    public Text nameText;
+    public Text dateText;
 
     void Update()
     {
+        nameText.text = "Name: Sarah";
+        dateText.text = "Day " + GameController.controller.Day + " - " + GameController.controller.SeasonName;
         sellunitText.text = GameController.controller.refineryController.unitSize + " L";
         sapAmountText.text = GameController.controller.RawSap.ToString("0.00") + " L";
         avgSapAmountText.text = GameController.controller.AverageSap.ToString("0.00") + " L";

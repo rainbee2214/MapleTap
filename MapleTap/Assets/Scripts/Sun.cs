@@ -8,17 +8,38 @@ public class Sun : MonoBehaviour
                  defaultZRotation = 0f;
 
     public float minYRotation = 70.0f,
-                 maxYRotation = -70.0f;
+                 maxYRotation = 270.0f;
 
+    float speed = 1f;
+
+    float increment;
     void Start()
     {
-        InvokeRepeating("RotateForDay", 0.0f, GameController.controller.DayLength);
+        transform.eulerAngles = new Vector3(defaultXRotation, minYRotation, defaultZRotation);
+        StartCoroutine(RotateForDay());
+        increment = 0.5f;
+        Debug.Log(increment);
     }
 
-    void RotateForDay()
+
+    IEnumerator RotateForDay()
     {
-        transform.rotation = Quaternion.Euler(defaultXRotation,
-                                              Mathf.Lerp(minYRotation, maxYRotation, GameController.controller.Day / 365),
-                                              defaultZRotation);
+        Vector3 rotation = Vector3.zero;
+        float y = minYRotation;
+        while (true)
+        {
+            y = transform.eulerAngles.y;
+            y += increment;
+            if (y >= maxYRotation || y <= minYRotation)
+            {
+                Debug.Log(y + " " + maxYRotation + " " + minYRotation);
+                increment *= -1f;
+            }
+            rotation.Set(defaultXRotation, y, defaultZRotation);
+            transform.eulerAngles = rotation;
+            yield return new WaitForSeconds(GameController.controller.DayLength);
+        }
+
+
     }
 }
