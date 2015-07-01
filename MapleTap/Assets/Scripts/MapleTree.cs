@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MapleTree : MonoBehaviour
 {
     [HideInInspector]
     public int id;
 
-    float maxGrowthRate = 10f;
-    float minGrowthRate = 1f;
-    float growthRate = 1f;
+    public Slider slider;
+    float growthRate = 50f;
     float decayDelay = 3f;
     float percentFull;
 
@@ -18,9 +18,21 @@ public class MapleTree : MonoBehaviour
 
     int level = 1;
 
+    bool ableToTap = true;
+    float increment = 0.1f;
+    bool grow = true;
+
     void Start()
     {
         id = int.Parse(this.name.Substring(5));
+        growthRate += Time.time;
+        StartCoroutine(Grow());
+
+    }
+
+    void Update()
+    {
+        if (grow) StartCoroutine(Grow());
     }
 
     public void SetupTree()
@@ -31,8 +43,15 @@ public class MapleTree : MonoBehaviour
     }
     public void Tap()
     {
-        int output = GetOutput();
-        GameController.controller.Tap(output, maxPotency, minPotency);
+        if (ableToTap)
+        {
+            int output = GetOutput();
+            GameController.controller.Tap(output, maxPotency, minPotency);
+        }
+        else
+        {
+            Debug.Log("Can't tap right now!");
+        }
     }
 
     public int GetOutput()
@@ -49,5 +68,33 @@ public class MapleTree : MonoBehaviour
     {
         baseOutput *= 2;
         Debug.Log("Upgrading " + this.name);
+    }
+
+    IEnumerator Grow()
+    {
+        float rand = Random.Range(0.5f, 1.5f);
+        grow = false;
+        int i = 0;
+        while (i < growthRate)
+        {
+            i++;
+            slider.value = i / growthRate;
+            yield return new WaitForSeconds(increment*rand);
+        }
+
+        //print("Done growing.");
+
+        yield return new WaitForSeconds(decayDelay);
+        ableToTap = false;
+        i = 0;
+        while (i < growthRate)
+        {
+            i++;
+            slider.value = 1-i / growthRate;
+            yield return null;
+        }
+        //print("Dying");
+        ableToTap = true;
+        grow = true;
     }
 }
