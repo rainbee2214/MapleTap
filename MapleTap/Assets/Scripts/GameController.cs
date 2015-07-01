@@ -12,9 +12,11 @@ public class GameController : MonoBehaviour
     public TreeController treeController;
 
     #region Properties
-    public int RawSap
+    float rawSap;
+    public float RawSap
     {
-        get { return rawSap.Count; }
+        get { return rawSap; }
+        set { rawSap += value; }
     }
     int time;
     public int Time
@@ -33,7 +35,7 @@ public class GameController : MonoBehaviour
     }
     public int Season
     {
-        get 
+        get
         {
             if (Day >= 275) return 3;
             else if (Day >= 183) return 2;
@@ -45,15 +47,15 @@ public class GameController : MonoBehaviour
     public float Money
     {
         get { return money; }
-        set 
-        { 
+        set
+        {
             if (money <= 0)
             {
                 debt -= value;
             }
             else
             {
-                money += value; 
+                money += value;
                 if (money < 0)
                 {
                     debt -= money;
@@ -95,10 +97,11 @@ public class GameController : MonoBehaviour
     }
     #endregion
 
-    public List<GameObject> rawSap;
+    //public List<GameObject> rawSap;
     GameObject rawSapGameObject;
 
     int secondsPerDay = 5;
+    public bool startTime = false;
 
     void Awake()
     {
@@ -114,8 +117,13 @@ public class GameController : MonoBehaviour
         refineryController = GetComponentInChildren<RefineryController>();
         treeController = GetComponentInChildren<TreeController>();
 
-        rawSap = new List<GameObject>();
+        //rawSap = new List<GameObject>();
         rawSapGameObject = Resources.Load("Prefabs/RawSap", typeof(GameObject)) as GameObject;
+    }
+
+    void Update()
+    {
+        if (startTime) StartCoroutine("StartTime");
     }
 
     public void PayBank(float value)
@@ -126,14 +134,19 @@ public class GameController : MonoBehaviour
         if (debt < 0) debt = 0;
     }
 
-    public void Tap(int numberOfSap, float maxPotency, float minPotency)
+    public void Tap(float amount, float maxPotency, float minPotency, float minAmount, float maxAmount)
     {
-        for (int i = 0; i < numberOfSap; i++)
+        //rawSap += Random.Range(minAmount, maxAmount) * Random.Range(minPotency, maxPotency);
+        rawSap += amount;
+        Debug.Log(amount);
+    }
+
+    IEnumerator StartTime()
+    {
+        while (time < 365 * dayLength)
         {
-            rawSap.Add(Instantiate(rawSapGameObject) as GameObject);
-            rawSap[rawSap.Count - 1].name = "RawSap" + (rawSap.Count - 1);
-            rawSap[rawSap.Count - 1].transform.SetParent(transform);
-            rawSap[rawSap.Count - 1].GetComponent<RawSap>().potency = Random.Range(minPotency, maxPotency);
+            time++;
+            yield return new WaitForSeconds(1f);
         }
     }
 }

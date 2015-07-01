@@ -11,8 +11,6 @@ public class TreeController : MonoBehaviour
     float costInflation = 1f;
     GameObject treeGameObject;
 
-    int assetCount = 12;
-
     void Start()
     {
         trees = new List<MapleTree>();
@@ -54,4 +52,5 @@ public class TreeController : MonoBehaviour
         //Debug.Log(sum);
         return sum / (trees.Count * 1.0f);
     }
+
 }
