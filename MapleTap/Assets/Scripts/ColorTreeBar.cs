@@ -19,7 +19,7 @@ public class ColorTreeBar : MonoBehaviour
     {
         parentSlider = transform.parent.parent.GetComponent<Slider>();
         scrollBar = gameObject.GetComponent<Image>();
-        InvokeRepeating("CalculateColor", 0.0f, 0.25f);
+        InvokeRepeating("CalculateColor", 0.0f, 0.1f);
     }
 
     void CalculateColor()
