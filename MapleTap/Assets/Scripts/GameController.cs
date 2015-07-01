@@ -5,7 +5,9 @@ public class GameController : MonoBehaviour
 {
     public static GameController controller;
 
+    [HideInInspector]
     public RefineryController refineryController;
+    [HideInInspector]
     public TreeController treeController;
 
     #region Properties
