@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MapleTree : Asset
+//Used to move the sun around and cast shadows ? Will change with seasons
+public class Sun : MonoBehaviour
 {
+
 
     void Start()
     {
