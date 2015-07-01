@@ -6,7 +6,8 @@ public class TreeController : MonoBehaviour
 {
     public List<GameObject> treesGameObjects;
     List<MapleTree> trees;
-    float costToUpgrade;
+
+    public float costToUpgrade = 100f;
 
     GameObject treeGameObject;
 
@@ -29,6 +30,7 @@ public class TreeController : MonoBehaviour
 
     public void Upgrade() 
     {
+        GameController.controller.Money = -costToUpgrade;
         foreach(MapleTree tree in trees)
         {
             tree.Upgrade();
@@ -40,4 +42,14 @@ public class TreeController : MonoBehaviour
         trees[index].Tap();
     }
 
+    public float GetAverageOutput()
+    {
+        float sum = 0f;
+        foreach(MapleTree tree in trees)
+        {
+            sum += tree.GetOutput();
+        }
+        //Debug.Log(sum);
+        return sum / (trees.Count * 1.0f);
+    }
 }
