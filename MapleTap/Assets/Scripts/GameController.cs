@@ -16,25 +16,44 @@ public class GameController : MonoBehaviour
     {
         get { return rawSap.Count; }
     }
-    int refinedSyrup;
-    public int RefinedSyrup
-    {
-        get { return refinedSyrup; }
-        set { refinedSyrup += value; }
-    }
     int time;
     public int Time
     {
         get { return time; }
         set { time += value; }
     }
-    float money;
+    public int Day
+    {
+        get { return time / secondsPerDay; }
+    }
+    public int Season
+    {
+        get 
+        {
+            if (Day >= 275) return 3;
+            else if (Day >= 183) return 2;
+            else if (Day >= 91) return 1;
+            else return 0;
+        }
+    }
+    float money = 1000f;
     public float Money
     {
         get { return money; }
-        set { money += value; }
+        set 
+        { 
+            if (money <= 0)
+            {
+                debt -= value;
+            }
+            else
+            {
+                money += value; 
+                maxMoney = money > maxMoney ? money : maxMoney;
+            }
+        }
     }
-    float debt;
+    float debt = 1000000f;
     public float Debt
     {
         get { return debt; }
@@ -44,7 +63,6 @@ public class GameController : MonoBehaviour
     public float MaxMoney
     {
         get { return maxMoney; }
-        set { maxMoney += value; }
     }
     float maxDebt;
     public float MaxDebt
@@ -57,6 +75,13 @@ public class GameController : MonoBehaviour
     {
         get { return playerName; }
         set { playerName = value; }
+    }
+    public float AverageSap
+    {
+        get
+        {
+            return treeController.GetAverageOutput();
+        }
     }
     #endregion
 
@@ -83,11 +108,6 @@ public class GameController : MonoBehaviour
         rawSapGameObject = Resources.Load("Prefabs/RawSap", typeof(GameObject)) as GameObject;
     }
 
-    public int GetDay()
-    {
-        return time/secondsPerDay;
-    }
-
     public void PayBank(float value)
     {
         //Won't be able to pay the bank unless there is some money in the account
@@ -104,6 +124,5 @@ public class GameController : MonoBehaviour
             rawSap[rawSap.Count - 1].name = "RawSap" + (rawSap.Count - 1);
             rawSap[rawSap.Count - 1].transform.SetParent(transform);
         }
-        Debug.Log(rawSap.Count + " sap total.");
     }
 }

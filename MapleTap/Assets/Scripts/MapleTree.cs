@@ -31,8 +31,13 @@ public class MapleTree : MonoBehaviour
     }
     public void Tap()
     {
-        int output = baseOutput * level;
+        int output = GetOutput();
         GameController.controller.Tap(output);
+    }
+
+    public int GetOutput()
+    {
+        return baseOutput * level;
     }
 
     void OnMouseDown()
