@@ -97,7 +97,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d63af8d15b1834e96cbc3b08bd8f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treesGameObjects: []
+  treesGameObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11480918
 MonoBehaviour:
   m_ObjectHideFlags: 1

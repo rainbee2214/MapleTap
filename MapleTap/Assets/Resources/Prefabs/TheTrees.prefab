@@ -24,6 +24,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 485556}
   - 114: {fileID: 11446954}
+  - 65: {fileID: 6532332}
   m_Layer: 0
   m_Name: Maple2
   m_TagString: Untagged
@@ -40,6 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 413778}
   - 114: {fileID: 11489842}
+  - 65: {fileID: 6563002}
   m_Layer: 0
   m_Name: Maple7
   m_TagString: Untagged
@@ -156,6 +158,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 453182}
   - 114: {fileID: 11401050}
+  - 65: {fileID: 6583674}
   m_Layer: 0
   m_Name: Maple10
   m_TagString: Untagged
@@ -172,6 +175,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 443912}
   - 114: {fileID: 11451230}
+  - 65: {fileID: 6532370}
   m_Layer: 0
   m_Name: Maple5
   m_TagString: Untagged
@@ -203,6 +207,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444614}
   - 114: {fileID: 11497586}
+  - 65: {fileID: 6543788}
   m_Layer: 0
   m_Name: Maple1
   m_TagString: Untagged
@@ -285,6 +290,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 452750}
   - 114: {fileID: 11474282}
+  - 65: {fileID: 6525340}
   m_Layer: 0
   m_Name: Maple11
   m_TagString: Untagged
@@ -348,6 +354,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 432664}
   - 114: {fileID: 11432236}
+  - 65: {fileID: 6583940}
   m_Layer: 0
   m_Name: Maple3
   m_TagString: Untagged
@@ -381,6 +388,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 462594}
   - 114: {fileID: 11408326}
+  - 65: {fileID: 6545648}
   m_Layer: 0
   m_Name: Maple8
   m_TagString: Untagged
@@ -610,6 +618,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 481826}
   - 114: {fileID: 11457524}
+  - 65: {fileID: 6546544}
   m_Layer: 0
   m_Name: Maple4
   m_TagString: Untagged
@@ -626,6 +635,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 469542}
   - 114: {fileID: 11436332}
+  - 65: {fileID: 6507438}
   m_Layer: 0
   m_Name: Maple9
   m_TagString: Untagged
@@ -659,6 +669,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 478160}
   - 114: {fileID: 11431898}
+  - 65: {fileID: 6596102}
   m_Layer: 0
   m_Name: Maple6
   m_TagString: Untagged
@@ -788,6 +799,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 496298}
   - 114: {fileID: 11464748}
+  - 65: {fileID: 6589644}
   m_Layer: 0
   m_Name: Maple12
   m_TagString: Untagged
@@ -2175,6 +2187,150 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126372}
   m_Mesh: {fileID: 4300000, guid: bf0e2b52ba1d2aa4aa18a089f3e364a7, type: 3}
+--- !u!65 &6507438
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6525340
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6532332
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6532370
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131490}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6543788
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6545648
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6546544
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6563002
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104590}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6583674
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6583940
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6589644
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
+--- !u!65 &6596102
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 1.44000006, z: 0}
 --- !u!114 &11401050
 MonoBehaviour:
   m_ObjectHideFlags: 1
