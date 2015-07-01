@@ -1497,6 +1497,7 @@ GameObject:
   - 222: {fileID: 723197514}
   - 114: {fileID: 723197513}
   - 114: {fileID: 723197512}
+  - 114: {fileID: 723197515}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -1560,7 +1561,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 723197513}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 723197515}
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Title
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &723197513
@@ -1590,6 +1602,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723197510}
+--- !u!114 &723197515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 723197510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ad2b8a95e4eb547b5257c2d21602d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultLevel: Title
+  clickToLoad: 0
 --- !u!1 &762434175
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,9 +2358,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Days
-
-'
+  m_Text: Days
 --- !u!222 &1117660589
 CanvasRenderer:
   m_ObjectHideFlags: 0
