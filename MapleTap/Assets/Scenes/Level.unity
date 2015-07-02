@@ -116,8 +116,8 @@ RectTransform:
   - {fileID: 958139571}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 11
-  m_AnchorMin: {x: .524999976, y: .150000006}
-  m_AnchorMax: {x: .625, y: .174999997}
+  m_AnchorMin: {x: .524999976, y: .140000001}
+  m_AnchorMax: {x: .625, y: .185000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -483,8 +483,8 @@ RectTransform:
   - {fileID: 1803367626}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 4
-  m_AnchorMin: {x: .075000003, y: .400000006}
-  m_AnchorMax: {x: .174999997, y: .425000012}
+  m_AnchorMin: {x: .075000003, y: .389999986}
+  m_AnchorMax: {x: .174999997, y: .435000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -598,8 +598,8 @@ RectTransform:
   - {fileID: 574932632}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 9
-  m_AnchorMin: {x: .224999994, y: .150000006}
-  m_AnchorMax: {x: .324999988, y: .174999997}
+  m_AnchorMin: {x: .224999994, y: .140000001}
+  m_AnchorMax: {x: .324999988, y: .185000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -840,8 +840,8 @@ RectTransform:
   - {fileID: 2072917687}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 2
-  m_AnchorMin: {x: .375, y: .649999976}
-  m_AnchorMax: {x: .474999994, y: .675000012}
+  m_AnchorMin: {x: .375, y: .639999986}
+  m_AnchorMax: {x: .474999994, y: .685000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 1
@@ -1895,8 +1895,8 @@ RectTransform:
   - {fileID: 285017850}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 0
-  m_AnchorMin: {x: .075000003, y: .649999976}
-  m_AnchorMax: {x: .174999997, y: .675000012}
+  m_AnchorMin: {x: .075000003, y: .639999986}
+  m_AnchorMax: {x: .174999997, y: .685000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -1996,7 +1996,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -2130,7 +2130,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -2198,7 +2198,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -2492,8 +2492,8 @@ RectTransform:
   - {fileID: 968845237}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 6
-  m_AnchorMin: {x: .375, y: .400000006}
-  m_AnchorMax: {x: .474999994, y: .425000012}
+  m_AnchorMin: {x: .375, y: .389999986}
+  m_AnchorMax: {x: .474999994, y: .435000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -2593,7 +2593,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -2902,7 +2902,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -2970,7 +2970,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -3017,8 +3017,8 @@ RectTransform:
   - {fileID: 1759846298}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 3
-  m_AnchorMin: {x: .524999976, y: .649999976}
-  m_AnchorMax: {x: .625, y: .675000012}
+  m_AnchorMin: {x: .524999976, y: .639999986}
+  m_AnchorMax: {x: .625, y: .685000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -3163,8 +3163,8 @@ RectTransform:
   - {fileID: 1964267403}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 8
-  m_AnchorMin: {x: .075000003, y: .150000006}
-  m_AnchorMax: {x: .174999997, y: .174999997}
+  m_AnchorMin: {x: .075000003, y: .140000001}
+  m_AnchorMax: {x: .174999997, y: .185000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -3543,7 +3543,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -3611,7 +3611,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -3998,7 +3998,7 @@ GameObject:
   - 222: {fileID: 1545454363}
   - 114: {fileID: 1545454362}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Details
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4016,7 +4016,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1820554698}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0199999996, y: .0500000007}
+  m_AnchorMin: {x: .0199999996, y: .150000006}
   m_AnchorMax: {x: .980000019, y: .949999988}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
@@ -4047,8 +4047,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'You have inherited your grandparent''s maple farm for your 18th birthday.
-    Unfortunately with all the farm''s debt. Collect maple sap and refine it to delicious
-    maple syrup to sell at market.
+    Unfortunately the farm is a little in debt. Collect maple sap and refine it to
+    delicious maple syrup to sell at market.
 
 
     Collect the sap by clicking the tree. Gather more by clicking at optimal harvest
@@ -4060,10 +4060,7 @@ MonoBehaviour:
 
     Upgrade your taps to collect more sap per click .
 
-    Upgrade your facilities to refine more sap at once for a better price .
-
-
-'
+    Upgrade your facilities to refine more sap at once for a better price.'
 --- !u!222 &1545454363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4200,8 +4197,8 @@ RectTransform:
   - {fileID: 2090689076}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 5
-  m_AnchorMin: {x: .224999994, y: .400000006}
-  m_AnchorMax: {x: .324999988, y: .425000012}
+  m_AnchorMin: {x: .224999994, y: .389999986}
+  m_AnchorMax: {x: .324999988, y: .435000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -4478,7 +4475,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -4602,8 +4599,8 @@ RectTransform:
   - {fileID: 423721046}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 10
-  m_AnchorMin: {x: .375, y: .150000006}
-  m_AnchorMax: {x: .474999994, y: .174999997}
+  m_AnchorMin: {x: .375, y: .140000001}
+  m_AnchorMax: {x: .474999994, y: .185000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -4968,7 +4965,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -4997,7 +4994,7 @@ GameObject:
   - 222: {fileID: 1885659934}
   - 114: {fileID: 1885659933}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5015,10 +5012,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1820554698}
   m_RootOrder: 1
-  m_AnchorMin: {x: .0199999996, y: .0500000007}
-  m_AnchorMax: {x: .980000019, y: .949999988}
-  m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 0, y: -300}
+  m_AnchorMin: {x: .0199999996, y: 0}
+  m_AnchorMax: {x: .980000019, y: .150000006}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1885659933
 MonoBehaviour:
@@ -5037,13 +5034,13 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 60
     m_Alignment: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: What was your name again?
 --- !u!222 &1885659934
@@ -5185,7 +5182,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -5267,8 +5264,8 @@ RectTransform:
   - {fileID: 377634528}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 1
-  m_AnchorMin: {x: .224999994, y: .649999976}
-  m_AnchorMax: {x: .324999988, y: .675000012}
+  m_AnchorMin: {x: .224999994, y: .639999986}
+  m_AnchorMax: {x: .324999988, y: .685000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -5446,7 +5443,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
@@ -5514,7 +5511,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7eae4454b9a39b84bb66878f03f10f64, type: 3}
     m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 1
@@ -5602,8 +5599,8 @@ RectTransform:
   - {fileID: 1922770359}
   m_Father: {fileID: 2087765952}
   m_RootOrder: 7
-  m_AnchorMin: {x: .524999976, y: .400000006}
-  m_AnchorMax: {x: .625, y: .425000012}
+  m_AnchorMin: {x: .524999976, y: .389999986}
+  m_AnchorMax: {x: .625, y: .435000002}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
