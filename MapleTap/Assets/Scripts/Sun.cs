@@ -18,7 +18,6 @@ public class Sun : MonoBehaviour
         transform.eulerAngles = new Vector3(defaultXRotation, minYRotation, defaultZRotation);
         StartCoroutine(RotateForDay());
         increment = 0.5f;
-        Debug.Log(increment);
     }
 
 
@@ -32,7 +31,6 @@ public class Sun : MonoBehaviour
             y += increment;
             if (y >= maxYRotation || y <= minYRotation)
             {
-                Debug.Log(y + " " + maxYRotation + " " + minYRotation);
                 increment *= -1f;
             }
             rotation.Set(defaultXRotation, y, defaultZRotation);

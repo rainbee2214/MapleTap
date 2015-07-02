@@ -182,10 +182,7 @@ public class GameController : MonoBehaviour
         rawSapGameObject = Resources.Load("Prefabs/RawSap", typeof(GameObject)) as GameObject;
     }
 
-    void Start()
-    {
-        startTime = true;
-    }
+
     void Update()
     {
         if (startTime) StartCoroutine("StartTime");
