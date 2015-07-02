@@ -47,7 +47,7 @@ public class MapleTree : MonoBehaviour
 
     public void SetupTree()
     {
-        maxPotency = Random.Range(60, 100)/100f;
+        maxPotency = Random.Range(60, 100) / 100f;
         minPotency = Random.Range(50, maxPotency * 100) / 100f;
         maxAmount = 5f;
         minAmount = 1f;
@@ -57,7 +57,7 @@ public class MapleTree : MonoBehaviour
     {
         if (ableToTap)
         {
-            GameController.controller.Tap( GetOutput(), maxPotency, minPotency, minAmount, maxAmount);
+            GameController.controller.Tap(GetOutput(), maxPotency, minPotency, minAmount, maxAmount);
             clicked = true;
         }
         else
@@ -68,7 +68,10 @@ public class MapleTree : MonoBehaviour
 
     public float GetOutput()
     {
-        return baseOutput * level * Mathf.Exp(slider.value);
+        float f = Mathf.Exp(slider.value);
+        if (f < 1.6) f -= 1f;
+        //Debug.Log(f);
+        return baseOutput * f;
     }
 
     void OnMouseDown()
@@ -92,7 +95,7 @@ public class MapleTree : MonoBehaviour
         {
             i++;
             slider.value = i / growthRate;
-            yield return new WaitForSeconds(increment*rand);
+            yield return new WaitForSeconds(increment * rand);
         }
 
         //print("Done growing.");
@@ -103,7 +106,7 @@ public class MapleTree : MonoBehaviour
         while (i < growthRate)
         {
             i++;
-            slider.value = 1-i / growthRate;
+            slider.value = 1 - i / growthRate;
             yield return null;
         }
         //print("Dying");
@@ -117,7 +120,7 @@ public class MapleTree : MonoBehaviour
         while (slider.value > 0)
         {
             i++;
-            slider.value = 1-i / growthRate*2;
+            slider.value = 1 - i / growthRate * 2;
             yield return null;
         }
         yield return new WaitForSeconds(clickDelay);

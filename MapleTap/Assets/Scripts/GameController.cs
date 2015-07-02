@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour
     }
     public int Day
     {
-        get { return 1+time / secondsPerDay; }
+        get { return 1 + time / secondsPerDay; }
     }
     public int Season
     {
@@ -89,7 +89,7 @@ public class GameController : MonoBehaviour
             }
             else
             {
-                
+
                 money += value;
                 if (money < 0)
                 {
@@ -150,11 +150,11 @@ public class GameController : MonoBehaviour
     }
     public float NetEarnings
     {
-        get { return Money-Debt;}
+        get { return Money - Debt; }
     }
     public float AverageSapPrice
     {
-        get { return TotalSalesPrices/TotalSales; }
+        get { return TotalSalesPrices / TotalSales; }
     }
     #endregion
 
@@ -198,7 +198,6 @@ public class GameController : MonoBehaviour
 
     public void Tap(float amount, float maxPotency, float minPotency, float minAmount, float maxAmount)
     {
-        //rawSap += Random.Range(minAmount, maxAmount) * Random.Range(minPotency, maxPotency);
         rawSap += amount;
         totalSap += amount;
         Debug.Log(amount);
@@ -210,8 +209,8 @@ public class GameController : MonoBehaviour
         while (time < 365 * dayLength)
         {
             time++;
-            yield return null;
-            //yield return new WaitForSeconds(1f);
+            //yield return null;
+            yield return new WaitForSeconds(1f);
         }
 
         dayFinished = 365;

@@ -11,10 +11,9 @@ public class RefineryController : MonoBehaviour
     float price = 10f;
 
     float precisionMultiplier = 1f;
-    float refinementMultiplier = 1f;
     [HideInInspector]
     public float costToUpgrade = 500f;
-    float costInflation = 1f;
+    float costInflation = 3f;
 
     void Start()
     {
@@ -27,7 +26,9 @@ public class RefineryController : MonoBehaviour
         {
             GameController.controller.RawSap = -unitSize;
             precisionMultiplier = 1 - refinementGame.GetPrecision();
-            float cost = price * refinementMultiplier * precisionMultiplier;
+            float cost = price * precisionMultiplier;
+            Debug.Log("Cost per unit: "+cost);
+
             Sell(cost*unitSize);
         }
     }
@@ -45,11 +46,10 @@ public class RefineryController : MonoBehaviour
         GameController.controller.UpgradesBought = costToUpgrade;
         Debug.Log("Refining upgrade");
         unitSize += 10;
-        refinementMultiplier *= 2;
         GameController.controller.Money = -costToUpgrade;
         costToUpgrade += (costToUpgrade * costInflation);
-        price *= costInflation;
-        costInflation += 0.25f;
+        price += costInflation*10;
+        costInflation += 0.1f;
         refinementGame.speed *= 3f / 4f;
         refinementGame.delta += 0.01f;
     }

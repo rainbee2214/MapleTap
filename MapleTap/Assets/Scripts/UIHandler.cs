@@ -24,11 +24,11 @@ public class UIHandler : MonoBehaviour
         dateText.text = "Day " + GameController.controller.Day + " - " + GameController.controller.SeasonName;
         sellunitText.text = GameController.controller.refineryController.unitSize + " L";
         sapAmountText.text = GameController.controller.RawSap.ToString("0.00") + " L";
-        avgSapAmountText.text = GameController.controller.AverageSap.ToString("0.00") + " L";
+        avgSapAmountText.text = GameController.controller.AverageSap.ToString("0") + " L";
         upgradeTapPriceText.text = "Upgrade Tap" + Environment.NewLine + "$" + GameController.controller.treeController.costToUpgrade;
         upgradeRefineryPriceText.text = "Upgrade Refinery" + Environment.NewLine + "$" + GameController.controller.refineryController.costToUpgrade;
-        moneyText.text = "$" + GameController.controller.Money;
-        debtText.text = "$" + GameController.controller.Debt;
+        moneyText.text = "$" + GameController.controller.Money.ToString("0");
+        debtText.text = "$" + GameController.controller.Debt.ToString("0");
 
         
     }
