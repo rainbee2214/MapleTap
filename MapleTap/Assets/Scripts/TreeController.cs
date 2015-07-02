@@ -8,7 +8,7 @@ public class TreeController : MonoBehaviour
     List<MapleTree> trees;
 
     public float costToUpgrade = 100f;
-    float costInflation = 1f;
+    float costInflation = 8f;
     GameObject treeGameObject;
 
     void Start()
@@ -31,7 +31,7 @@ public class TreeController : MonoBehaviour
         GameController.controller.UpgradesBought = costToUpgrade;
         GameController.controller.Money = -costToUpgrade;
         costToUpgrade += (costToUpgrade*costInflation);
-        costInflation += 0.1f;
+        costInflation += 1f;
         foreach(MapleTree tree in trees)
         {
             tree.Upgrade();

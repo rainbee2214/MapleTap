@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
         get { return time; }
         set { time += value; }
     }
-    float dayLength = 5f;
+    float dayLength = 2f;
     public float DayLength
     {
         get { return dayLength; }
@@ -210,7 +210,7 @@ public class GameController : MonoBehaviour
         {
             time++;
             //yield return null;
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.1f);
         }
 
         dayFinished = 365;
