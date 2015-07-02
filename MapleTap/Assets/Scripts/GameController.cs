@@ -42,14 +42,14 @@ public class GameController : MonoBehaviour
         get { return time; }
         set { time += value; }
     }
-    float dayLength = 2f;
+    float dayLength = 1f;
     public float DayLength
     {
         get { return dayLength; }
     }
     public int Day
     {
-        get { return 1 + time / secondsPerDay; }
+        get { return 1 + (int)(time / dayLength); }
     }
     public int Season
     {
@@ -85,7 +85,7 @@ public class GameController : MonoBehaviour
             if (value >= 0) moneyEarned += value;
             if (money <= 0 && value <= 0)
             {
-                debt -= value;
+                debt -= value*2;
             }
             else
             {
@@ -161,7 +161,6 @@ public class GameController : MonoBehaviour
     //public List<GameObject> rawSap;
     GameObject rawSapGameObject;
 
-    int secondsPerDay = 5;
     public bool startTime = false;
 
     void Awake()
@@ -200,7 +199,6 @@ public class GameController : MonoBehaviour
     {
         rawSap += amount;
         totalSap += amount;
-        Debug.Log(amount);
     }
 
     IEnumerator StartTime()
@@ -210,7 +208,7 @@ public class GameController : MonoBehaviour
         {
             time++;
             //yield return null;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(1f);
         }
 
         dayFinished = 365;
