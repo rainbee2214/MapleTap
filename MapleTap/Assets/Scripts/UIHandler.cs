@@ -14,6 +14,7 @@ public class UIHandler : MonoBehaviour
     public Text sellunitText;
     public Text nameText;
     public Text dateText;
+    public Text averagePriceText;
 
     public GameObject instructions;
     public Text inputNameText;
@@ -25,10 +26,11 @@ public class UIHandler : MonoBehaviour
         sellunitText.text = GameController.controller.refineryController.unitSize + " L";
         sapAmountText.text = GameController.controller.RawSap.ToString("0.00") + " L";
         avgSapAmountText.text = GameController.controller.AverageSap.ToString("0") + " L";
-        upgradeTapPriceText.text = "Upgrade Tap" + Environment.NewLine + "$" + GameController.controller.treeController.costToUpgrade;
-        upgradeRefineryPriceText.text = "Upgrade Refinery" + Environment.NewLine + "$" + GameController.controller.refineryController.costToUpgrade;
+        upgradeTapPriceText.text = "Upgrade Tap" + Environment.NewLine + "$" + GameController.controller.treeController.costToUpgrade.ToString("0");
+        upgradeRefineryPriceText.text = "Upgrade Facilities" + Environment.NewLine + "$" + GameController.controller.refineryController.costToUpgrade.ToString("0");
         moneyText.text = "$" + GameController.controller.Money.ToString("0");
         debtText.text = "$" + GameController.controller.Debt.ToString("0");
+        averagePriceText.text = "$" + GameController.controller.AverageSapPrice.ToString("0.00") + " / L";
 
         
     }

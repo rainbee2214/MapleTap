@@ -17,13 +17,13 @@ public class StatsUIHandler : MonoBehaviour
     void Start()
     {
         nameText.text = GameController.controller.PlayerName;
-        totalSapText.text = GameController.controller.TotalSap + " L";
-        averageSapText.text = GameController.controller.AverageSap + " L";
-        averagePriceText.text = "$"+GameController.controller.AverageSapPrice + " / L";
-        grossEarningsText.text = "$" + GameController.controller.Money;
-        upgradesBoughtText.text = "$" + GameController.controller.UpgradesBought;
-        debtOwingText.text = "$"+GameController.controller.Debt;
-        netEarningsText.text = "$"+GameController.controller.NetEarnings;
+        totalSapText.text = GameController.controller.TotalSap.ToString("0.00") + " L";
+        averageSapText.text = GameController.controller.AverageSap.ToString("0.00") + " L";
+        averagePriceText.text = "$" + GameController.controller.AverageSapPrice.ToString("0.00") + " / L";
+        grossEarningsText.text = "$" + GameController.controller.Money.ToString("0.00");
+        upgradesBoughtText.text = "$" + GameController.controller.UpgradesBought.ToString("0.00");
+        debtOwingText.text = "$"+GameController.controller.Debt.ToString("0.00");
+        netEarningsText.text = "$" + GameController.controller.NetEarnings.ToString("0.00");
         daysText.text = ""+GameController.controller.DayFinished;
     }
 }
